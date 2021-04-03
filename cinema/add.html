@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <title>Cinema | App</title>
+  </head>
+  <body>
+    <header class="header">
+    	<div class="container">
+	    	<nav class="navbar navbar-light">
+			  <a class="navbar-brand" href="index.html">
+			  	<img src="assets/images/logo.png" alt="">
+			  </a>
+			  <form class="form-nav">
+			  	<div class="d-flex justify-content-between">
+				  	<input class="input-nav" type="search" placeholder="Поиск">
+				    <a href="#">
+				    	<img src="assets/images/search-icon.png" alt="">
+				    </a>
+			  	</div>
+			  </form>
+			  <div class="user d-flex align-items-center">
+			  	 <a href="#">
+			  		<i class="fas fa-plus"></i>
+			 	 </a>
+				  <a class="oval" href="#">
+				  	<i class="fas fa-bell"></i>
+				  </a>
+				  <a href="#">
+				  	<img src="assets/images/avatar.png" alt="">
+				  </a>
+					<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">Thomas Jackson <i class="fas fa-chevron-down"></i></button>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="#home">Home</a>
+					    <a href="#about">About</a>
+					    <a href="#contact">Contact</a>
+					  </div>
+					</div>
+			  </div>
+			</nav>
+		</div>
+    </header>
+
+    <div class="add-banner">
+    	<div class="add-banner-text">
+    		<div class="row">
+    			<div class="col-sm-6">
+    					<div class="add-banner-title">
+	    				<span>Добавить фильм</span>
+	    			</div>
+			    	<div class="add-banner-subtitle">
+			    		<span>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Obcaecati molestias autem est distinctio voluptas in sunt dolorem ipsa ratione. Harum quia laudantium nemo saepe perspiciatis quisquam id, maxime voluptatem, vitae.</span>
+			    	</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="add-info">
+    	<div class="container">
+    		<h2>Информация о фильме</h2>
+    		<div class="row">
+				<form class="form">
+					<div class="col-sm-5">
+						<div class="form-item">
+	    					<label>Оригинальное название *</label>
+	    					<input type="text" placeholder="Название фильма">
+    					</div>
+					</div>
+    				<div class="col-sm-4">
+						<div class="form-item">
+	    					<label>IMDB ID<i class="fas fa-question" id="quest" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></i></label>
+	    					<input type="text" placeholder="Ex. tt6146586">
+    					</div>
+					</div>
+    				<div class="col-sm-3">
+						<div class="form-item">
+	    					<label>Жанр *</label>
+	    					<select>
+						      <option>Боевик</option>
+						      <option>Триллер</option>
+						      <option>Ужасы</option>
+						      <option>Фантастика</option>
+						      <option>Фентези</option>
+						    </select>
+    					</div>
+					</div>
+				</form>
+    		</div>
+
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<div class="form-item">
+    					<label>Краткое содержание фильма *</label>
+    					<textarea placeholder="Сделайте описание воспоминания о фильме... (минимум 30 символов)"></textarea>
+    				</div>
+    			</div>
+    			<div class="col-sm-6">
+    				<div class="form-item">
+    					<div class="form-item-info">
+    						<i class="fas fa-info" id="info" data-title="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></i>
+    						<span>Предложение:</span>
+    					</div>
+    					<div class="form-item-text">
+    						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit perspiciatis nemo quas veritatis doloremque pariatur iste accusantium, sequi facilis temporibus rerum ut, natus at deleniti repudiandae magni ipsa sit, dignissimos!</span>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="col-sm-8 d-flex">
+    				<div class="form-item">
+    					<label>Классификация</label>
+    					<select>
+					      <option>Выбрать</option>
+					      <option>Триллер</option>
+					      <option>Ужасы</option>
+					      <option>Фантастика</option>
+					      <option>Фентези</option>
+					    </select>
+    				</div>
+    				<div class="form-item">
+    					<label>Год производства</label>
+    					<select>
+					      <option>Выбрать</option>
+					      <option>Триллер</option>
+					      <option>Ужасы</option>
+					      <option>Фантастика</option>
+					      <option>Фентези</option>
+					    </select>
+    				</div>
+    				<div class="form-item">
+    					<label>Распространитель</label>
+	    				<input type="text" placeholder="Ex. Universal">
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="row">
+    			<div class="col-sm-8 d-flex">
+    				<div class="form-item">
+    					<label>Продолжительность</label>
+	    				<input type="text" placeholder="Ex. 138 min">
+    				</div>
+    				<div class="form-item">
+    					<label>Бюджет</label>
+	    				<input type="text" placeholder="Ex. $55,000,00">
+    				</div>
+    				<div class="form-item">
+    					<label>Касса</label>
+	    				<input type="text" placeholder="Ex. $38,000,00">
+    				</div>
+    			</div>
+    		</div>
+    	</div><!-- continer end -->
+    </div><!-- add-info end -->	
+
+    <div class="photo-video">
+    	<div class="container">
+    		<h2>Фото & Видео</h2>
+    		<div class="row">
+    			<div class="col-sm-6">
+    				<div class="photo-video-content">
+    					<div class="photo-video-item">
+							<div class="photo-video-img">
+								<img src="assets/images/upload.png" alt="">
+							</div>
+	    					<div class="photo-video-text">
+	    						<span>Перетащите ваши файлы сюда или <a href="#">просмотрите их</a>, чтобы выбрать нужный файл.</span>
+	    					</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-sm-2">
+    				<div class="photo-video-item">
+    					<div class="photo-video-img">
+    						<i class="fas fa-plus"></i>  
+    					</div>
+    				</div>	
+    			</div>
+    			<div class="col-sm-2">
+	    			<div class="photo-video-item">
+    					<div class="photo-video-img">
+    						<i class="fas fa-plus"></i>  
+    					</div>
+    				</div>	
+    			</div>
+    			<div class="col-sm-2">
+    				<div class="photo-video-item">
+    					<div class="photo-video-img">
+    						<i class="fas fa-plus"></i>  
+    					</div>
+    				</div>		
+    			</div>
+    		</div>
+    	</div>		
+    </div><!-- photo-video end -->
+
+    <div class="conditions">
+    	<div class="container">
+    		<div class="conditions-item">
+    			<div class="row">
+    				<div class="col-sm-9">
+						<div class="conditions-text">
+		    				<b>Условия</b>
+		    				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repellat accusantium numquam ab eum, perferendis quae a temporibus error itaque expedita atque, corrupti, iste sit. Consequatur ipsam impedit maiores officiis?</p>
+		    			</div>
+    				</div>
+    				<div class="col-sm-3">
+    					<div class="conditions-button">
+	    					<button class="conditions-btn">Сохранить</button>
+	    				</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+
+	<footer class="footer">
+		
+	</footer>
+
+
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/17521ae7c3.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+	<script src="assets/js/jquery-3.5.1.min.js"></script>
+	<!-- Slick.js -->
+	<script src="assets/js/slick.min.js"></script>
+	<!-- Script.js -->
+	<script src="assets/js/script.js"></script>
+  </body>
+</html>
