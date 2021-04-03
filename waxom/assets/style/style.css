@@ -1,0 +1,678 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.topheader{
+	width: 100%;
+	height: 100vh;
+
+	background-size: cover;
+
+
+	background: url(../images/Waxom-Hemepage.jpg);
+}
+
+.navbar{
+	padding-top: 20px;
+}
+
+.navbar-brand{
+	padding-right: 50px;
+}
+
+
+.nav-item{
+	padding-left: 10px;
+}
+
+.nav-link{
+	color: #fff;
+
+	transition: .2s;
+}
+
+.nav-link:hover{
+	color: #c7b299;
+}
+
+/* SLIDER */
+
+.slider{
+	justify-content: center;
+	padding-top: 100px;
+	
+}
+
+.btn-carousel{
+	margin-top: 20px;
+	border-radius: 3px;
+	font-weight: 900;
+	text-transform: uppercase;
+	border: 1px solid #998675;
+	border-bottom: 2px solid #736357;
+	padding: 10px 20px;
+	background-color: #998675;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn-carousel:hover{
+	opacity: 0.8;
+}
+
+
+.carousel-caption{
+	position: static;
+	padding: 0 300px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.carousel-indicators{
+	bottom: -230px;
+}
+
+.carousel-indicators .active{
+	background-color: #000;
+	border: 2px solid #c7b299;
+}
+
+.carousel-indicators li {
+	background-color: #ccc;
+	
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+}
+
+.carousel-control-prev{
+	transform: rotate(180deg);
+}
+
+/* SERVICES */
+
+.services{
+	margin-top: 100px;
+}
+
+.col-sm-3 img{
+	padding-bottom: 20px;
+}
+
+.col-sm-3 h4{
+	font-weight: 600;
+	padding-bottom: 10px;
+	font-family: 'Raleway', sans-serif;
+	opacity: 0.8;
+}
+
+.col-sm-3 p:after{
+	content: "";
+	display: block;
+	margin: 30px auto;
+
+	height: 3px;
+	width: 80px;
+
+	background-color: #000;
+	opacity: 0.2;
+}
+
+.col-sm-3 p:after :hover{
+	opacity: 1;
+}
+
+/* DEVICES */
+
+.section{
+	margin-top: 50px;
+}
+
+.text{
+	line-height: 2;
+	padding: 100px 250px 30px 250px;
+
+
+}
+
+.title h2{
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	opacity: 0.8;
+}
+
+.subtitle p{
+	opacity: 0.8;
+}
+
+.devices{
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	object-fit: cover;
+	
+}
+
+/* TEXT-BOXES */
+
+.text-boxes{
+	background: linear-gradient(to right, #231c1a, #4d3326)
+}
+
+.col-sm-8{
+	padding: 40px 50px 25px 50px;
+}
+
+.col-sm-8 span{
+	color: #c7b299;
+}
+
+.col-sm-8 h2{
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+
+.col-sm-8 p{
+	color: grey;
+}
+
+.btn-text-boxes{
+	font-family: 'Raleway', sans-serif;
+	border-radius: 3px;
+	font-weight: 900;
+	text-transform: uppercase;
+	border: 1px solid #998675;
+	border-bottom: 2px solid #736357;
+	padding: 10px 20px;
+	background-color: #998675;
+	color: #fff;
+	cursor: pointer;
+	
+	float: right;
+
+	margin-top: 50px;
+}
+
+.btn-text-boxes:hover{
+	opacity: 0.6;
+}
+
+
+/* ITEMS */
+
+.list{
+	text-align: center;
+}
+
+.item{
+	list-style-type: none;
+	display: inline;
+
+	margin-right: 5px;
+}
+
+a.item-link{
+	text-decoration: none;
+	color: grey;
+
+	border: 1px solid;
+	border-radius: 3px;
+
+	padding: 5px 20px;
+
+	transition: .2s;
+}
+
+a.item-link:hover{
+	color: #fff;
+	background-color: #998675;
+	border-color: #998675
+}
+
+/* CARD */
+
+.card{
+	width: 355px;
+	height: 345px;
+}
+
+.fa-square-full{
+	color: #fff;
+	position: absolute;
+	transform: rotate(45deg);
+
+	top: 229px;
+	left: 30px;
+
+	transition: color .2s;
+}
+
+.card:hover .fa-square-full{
+	color: #231c1a;
+}
+
+
+.card-img img{
+
+	object-fit: cover;
+	position: relative;
+	border-radius: 0;
+
+	transition: .2s;
+}
+
+.card:hover .card-img img{
+	opacity: 0.3;
+}
+
+.card-img{
+	background: #000;
+}
+
+.card-link{
+	width: 100%;
+
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+
+	position: absolute;
+
+	top: 30%;
+	left: 0;
+	z-index: 2;
+
+	opacity: 0;
+
+	transition: opacity .2s;
+
+}
+
+.card:hover .card-link{
+	opacity: 1;
+
+}
+
+.card-link a{
+	color: #fff;
+	padding-right: 10px;
+
+	transition: color .2s;
+}
+
+.card-link a:hover{
+	color: #998675;
+}
+
+.card-body{
+	padding: 30px;
+	background-color: #fff;
+	
+	transition: .2s;
+}
+
+.card:hover .card-body{
+	background-color: #231c1a;
+}
+
+.card-title{
+	color: #c7b299;
+
+	transition: color .2s;
+}
+
+.card:hover .card-title{
+	color: #fff;
+}
+
+
+.card-text{
+	color: #ccc;
+
+	transition: color .2s;
+}
+
+.card:hover .card-text{
+	color: #c7b299;
+}
+.btn-card{
+	font-family: 'Raleway', sans-serif;
+	border-radius: 3px;
+	font-weight: 900;
+	text-transform: uppercase;
+	border: 1px solid #998675;
+	border-bottom: 2px solid #736357;
+	padding: 10px 30px;
+	background-color: #998675;
+	color: #fff;
+	cursor: pointer;
+
+	margin-top: 50px;
+}
+
+.btn-card:hover{
+	opacity: 0.8;
+}
+
+/* VIDEO */
+
+.presentation{
+	margin-top: 100px;
+	position: relative;
+	background-color: #000;
+}
+
+
+
+.presentation-content{
+	width: 500px;
+	display: flex;
+	justify-content: center;
+	line-height: 2;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	text-align: center;
+
+	margin: 150px 0px 0px 400px;
+}
+
+.presentation-button a img{
+	width: 70px;
+}
+
+.presentation-title{
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 30px;
+}
+
+.presentation-text{
+	color: #fff;
+}
+
+.presentation-time{
+	padding-top: 30px;
+	color: #c7b299;
+}
+
+.video{
+	position: relative;
+	padding-bottom: 600px;
+}
+
+.video-bg{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+
+	opacity: .4;
+	position: absolute;
+}
+
+/* MOBILE-DEVICES */
+
+.mobile-devices{
+	margin-top: 100px;
+}
+
+.mobile-devices-text{
+	padding-top: 50px;
+}
+
+.mobile-devices-title{
+	font-family: 'Raleway', sans-serif;
+}
+
+.mobile-devices-subtitle{
+	padding-top: 20px;
+
+}
+
+.mobile-devices-features{
+	padding-top: 10px;
+}
+
+.fa-angle-right{
+	margin: 0px 20px 0px 50px;
+	padding: 3px 6px 3px 8px;
+	border-radius: 50%;
+	background-color: #c7b299;
+	color: #fff;
+}
+
+.mobile-devices-features-text{
+	padding-top: 10px;
+	color: grey;
+}
+
+/* COUNTERS */
+
+.counters{
+	background: linear-gradient(to right, #231c1a, #4d3326)
+}
+
+.counter-count{
+	padding-top: 20px;
+	color: #fff;
+}
+
+.counter-item{
+	line-height: 2;
+
+	padding: 80px 40px 60px 30px;
+
+	text-align: center;
+	display: inline-block;
+}
+
+.counter-text{
+	font-weight: bold;
+	font-size: 14px;
+	color: #c7b299;
+	text-transform: uppercase;
+}
+
+.counter-text:after{
+	content: "";
+	display: block;
+	margin: 30px auto;
+
+	height: 3px;
+	width: 30px;
+
+	background-color: #fff;
+}
+
+/* POSTS */
+
+.section{
+	margin-top: 0;
+}
+
+.card-date{
+	left: 10px;
+	top: 10px;
+
+	color: #fff;
+	position: absolute;
+
+	border-radius: 5px 5px 5px 5px;
+	background-color: #252525;
+
+	transition: .2s;
+}
+
+.card:hover .card-date{
+	background-color: #a48d72;
+}
+
+.card-date h1{
+	text-align: center;
+
+	padding: 5px 10px;
+	margin: 0;
+
+	border-radius: 5px 5px 0px 0px;
+	background-color: #333;
+
+	transition: .2s;
+}
+
+.card:hover .card-date h1{
+	background-color: #c7b299;
+}
+
+.card-date p{
+	text-align: center;
+
+	margin: 0;
+	padding: 5px 10px;
+}
+
+
+.post-title{
+	color: grey;
+}
+
+.card:hover .post-title{
+	color: #c7b299;
+}
+
+.post-text{
+	color: #ccc;
+}
+
+.card:hover .post-text{
+	color: #fff;
+}
+
+/* PARTNERS */
+
+
+.partners{
+	position: relative;
+	background: #000;
+	margin-top: 150px;
+}
+
+.partners-bg img{
+	width: 100%;
+	height: 470px;
+	object-fit: cover;
+	
+	opacity: .5;
+}
+
+.partners-logo{
+	position: absolute;
+	
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	top: 25%;
+	left: 155px;
+}
+
+.partners-item{
+	padding-right: 50px;
+}
+
+/* FOOTER */
+
+.footer-header{
+	padding: 20px 0px 50px 0px;
+	border-top: 1px solid #c7b299;
+	border-bottom: 1px solid #c7b299; 
+	background-color: #191919;
+}
+
+
+hr{
+	background-color: #333;
+}
+
+.footer-header h3{
+	font-family: 'Raleway', sans-serif;
+}
+
+.footer-header-text p{
+	color: grey;
+	transition: .2s;
+}
+
+.footer-header-text:hover p{
+	color: #c7b299;
+}
+
+.footer-header span{
+	color: #333;
+	display: flex;
+	flex: left;
+
+	transition: .2s;
+}
+
+.footer-header-text:hover span{
+	color: #fff;
+}
+
+.footer-header a img{
+	margin: 5px;
+	object-fit: cover;
+	width: 130px;
+	height: 100px;
+}
+
+.footer-bottom{
+	padding: 30px 0px 30px 0px;
+	background-color: #111111;
+}
+
+.copyright p, a{
+	font-size: 14px;
+	margin: 0;
+}
+
+.copyright p{
+	color: grey;
+}
+
+.copyright a{
+	text-decoration: none;
+	color: grey;
+
+	transition: .2s;
+}
+
+.copyright a:hover{
+	color: #c7b299;
+}
+
+.design-by{
+	padding-left: 200px;
+}
+
+.design-by p, a{
+	font-size: 14px;
+	margin: 0;
+}
+
+.design-by p{
+	color: grey;
+}
+
+.design-by a{
+	text-decoration: none;
+	color: #fff;
+
+	transition: .2s;
+}
+
+.design-by a:hover{
+	opacity: .5;
+}
