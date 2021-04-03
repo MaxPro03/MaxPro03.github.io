@@ -1,0 +1,167 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+}
+
+.topheader{
+	margin-bottom: 500px;
+	padding-top: 60px;
+	width: 100%;
+	height: 100vh;
+
+	background: url(../images/intro.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.navbar{
+	width: 100%;
+}
+
+.navbar-brand img, p, h1{
+	display: inline-block;
+}
+
+.navbar-brand p{
+	font-size: 34px;
+	vertical-align: middle;
+	margin: 0;
+	padding-left: 5px;
+}
+
+
+#navbarNavDropdown{
+	padding-left: 286px;
+}
+
+.nav-link{
+	font-weight: 700;
+	display: inline-block;
+	vertical-align: top;
+
+
+}
+
+.nav-link:after{
+	content: "";
+	display: block;
+	opacity: 0;
+
+	height: 2px;
+	
+	background-color: #fff;
+
+	top: 100%;
+	z-index: 1;
+
+	transition: opacity .3s;
+}
+
+.nav-link:hover:after{
+	opacity: 1;
+}
+
+.row .col-sm-6 .h1{
+	padding: 140px 0px;
+	line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+}
+
+.card{
+	margin-top: -50px;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.card-body{
+	width: 370px;
+	height: 400px;
+	text-align: center;
+	justify-content: center;
+}
+
+.section .row .col-sm-6{
+	margin-top: 150px;
+}
+
+.row .col-sm-6 img{
+	width: 100%;
+	height: 317px;
+	object-fit: cover;
+}
+
+.col-sm-4 h1{
+	margin-top: 120px;
+	margin-bottom: 80px;
+}
+
+.container-fluid{
+	padding: 0;
+}
+
+#img{
+	object-fit: cover;
+	height: 300px;
+	width: 100%;
+}
+
+#solution{
+	margin-top: 80px;
+}
+
+.comments{
+	overflow: hidden;
+	background-color: #ccc;
+	margin-top: 100px;
+	padding-left: 100px;
+}
+
+#img-men{
+	object-fit: cover;
+	height: 350px;
+	width: 100%;
+}
+
+.rightcol{
+	line-height: 1.4;
+	font-family: 'Raleway', sans-serif;
+	padding-left: 30px;
+}
+
+
+footer{
+	background: url(../images/footer_02.jpg);
+	margin-top: 160px;
+	padding: 115px;
+}
+
+.footer-info{
+	padding-bottom: 130px;
+}
+
+.footer-info img{
+	margin: 0 60px;
+}
+
+.footer-info p{
+
+	margin: 0;
+	padding-top: 20px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.footer-social a{
+	padding: 20px;
+	font-size: 30px;
+	color: #fff;
+	transition: .2s;
+}
+
+.footer-social a:hover{
+	color: #ccc;
+}
+
