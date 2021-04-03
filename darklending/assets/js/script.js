@@ -1,0 +1,12 @@
+$(document).ready(function(){
+	$('.slider').slick({
+		centerMode:false,
+		arrows:true,
+		dots:false,
+		slidesToShow:3,
+		autoplay:false,
+		speed:800,
+		initialSlide:0,
+		draggable:false,
+	});
+});
