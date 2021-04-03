@@ -1,0 +1,606 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+	width: 100%;
+	max-width: 1230px;
+	padding: 0;
+	margin: 0 auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* NAVBAR */
+
+.header{
+	position: absolute;
+	width: 100%;
+}
+
+.navbar{
+	background: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid #f2f0f0;
+	display: flex;
+}
+
+.header-inner{
+	display: flex;
+}
+
+.navbar-brand a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+}
+
+.navbar-brand{
+	margin-left: 0px;
+	padding: auto;
+	border-right: 1px solid #f2f0f0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+	
+}
+
+.navbar-brand h1{
+	transition: .2s;
+	letter-spacing: -4px;
+	padding: 10px 20px;
+}
+
+.navbar-brand h1:hover{
+	opacity: .7;
+}
+
+.navbar-nav{
+	margin: 35px 81px 0px 81px;
+	justify-content: center;
+	display: flex;
+	margin-top: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-nav li{
+	list-style-type: none;
+}
+
+.navbar-link{
+	text-decoration: none;
+	color: #fff;
+	margin: 0px 10px;
+	color: white;
+	transition: .2s;
+}
+
+.navbar-link:hover{
+	opacity: .7;
+}
+
+.navbar-icons{
+	border-right: 1px solid #f2f0f0;
+	border-left: 1px solid #f2f0f0;
+
+	display: flex;
+
+	font-size: 24px;
+
+	padding: 0px 30px;
+}
+
+.navbar-icons a{
+	color: #fff;
+}
+
+.nav-social-icon{
+	padding: 30px 20px 0px 10px;
+
+	transition: .2s;
+}
+
+.nav-social-icon:hover{
+	opacity: .7;
+}
+
+.navbar-cart{
+	display: flex;
+	border-right: 1px solid #f2f0f0;
+
+	padding: 30px;
+}
+
+.navbar-cart a{
+	color: #fff;
+	font-size: 24px;
+	transition: .2s;
+}
+
+.navbar-cart a:hover{
+	opacity: .7;
+}
+
+.navbar-search{
+	display: flex;
+
+	padding: 30px;
+}
+
+.navbar-search a{
+	color: #fff;
+	font-size: 24px;
+	transition: .2s;
+}
+
+.navbar-search a:hover{
+	opacity: .7;
+}
+
+/* HEADER-MAIN */
+.intro{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/img-bg.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.header-main{
+	margin-top: 100px;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-main-title h1{
+	text-transform: uppercase;
+	font-size: 200px;
+	line-height: 0.75;
+	letter-spacing: -10px;
+}
+
+.header-main-subtitle p{
+	padding-top: 10px;
+	letter-spacing: 10px;
+}
+
+.header-main-button{
+	margin-top: 50px;
+}
+
+button{
+	color: #fff;
+	background-color: #3954d9;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/* Card */
+
+.card{
+	margin-top: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.card-item{
+	width: 25%;
+	padding: 50px 25px;
+	border-right: 1px solid #f2f0f0;
+}
+
+.card-item:last-child{
+	border: none;
+}
+
+.card-img{
+	margin-bottom: 20px;
+}
+
+.card-text h1{
+	text-transform: uppercase;
+	color: #0d2e57;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.card-text p{
+	padding: 10px 0px 20px 0px;
+	color: #808080;
+}
+
+.card-text a{
+	text-decoration: none;
+	color: #3753da;
+	font-weight: bold;
+}
+
+.card-text a:hover{
+	text-decoration: underline;
+}
+
+/* OFFERS */
+
+.offers{
+	display: flex;
+	background: #f2f0f0;
+}
+
+.offers-item img{
+	object-fit: cover;
+	max-width: 615px;
+}
+
+.offers-item{
+	width: 50%;
+	text-align: center;
+
+}
+
+.offers-text{
+	padding: 100px 100px 0px 100px;
+}
+
+.offers-text h3{
+	text-transform: uppercase;
+	color: #808080;
+}
+
+.offers-text h1{
+	text-transform: uppercase;
+	color: #0d2e57;
+	font-family: 'Bebas Neue', cursive;
+	margin: 10px 0px;
+}
+
+.offers-text p{
+	margin: 20px 0px;
+	color: #808080;
+	text-align: justify;
+}
+
+.offers-price{
+	display: flex;
+	justify-content: center;
+}
+
+.offers-price h1{
+	font-size: 50px;
+	color: #3954d9;
+}
+
+.offers-price strike{
+	padding: 15px 0px 0px 50px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.offers-timer{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0px;
+}
+
+.offers-timer-item{
+	border-radius: 20px;
+	padding: 15px;
+	margin: 5px;
+	background: #fff;
+	text-align: center;
+}
+
+.offers-timer-item small{
+	text-transform: uppercase;
+	padding-top: 20px;
+}
+
+/* FEATURE-PRODUCT */
+
+.feature-product{
+	display: flex;
+}
+
+.product-item{
+	width: 25%;
+	border-right: 1px solid #f2f0f0;
+	border-bottom:  1px solid #f2f0f0;
+	padding: 30px;
+
+}
+
+.product-item img{
+	max-width: 250px;
+	object-fit: cover;
+}
+
+.product-name h1{
+	font-family: 'Bebas Neue', cursive;
+	text-transform: uppercase;
+	color: #0d2e57;
+	font-size: 24px;
+}
+
+.product-price{
+	display: flex;
+}
+
+.product-price h1{
+	font-size: 14px;
+	color: #3954d9;
+}
+
+.product-price strike{
+	padding: 1px 0px 0px 10px;
+	font-size: 12px;
+	color: #808080;
+}
+
+/* PRODUCT */
+
+.product{
+	display: flex;
+}
+
+.mens-shoes{
+	text-transform: uppercase;
+	width: 25%;
+	border-right: 1px solid #f2f0f0;
+	border-bottom:  1px solid #f2f0f0;
+	padding: 30px;
+
+	background-color: #232323;
+
+	color: #fff;
+}
+
+.mens-shoes h1{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+}
+
+.mens-shoes p{
+	letter-spacing: 8px;
+	font-size: 12px;
+}
+
+.mens-shoes button{
+	margin-top: 40px;
+}
+
+.product-banner{
+	background-image: url(../images/Product/banner_03.jpg);
+	background-position: top;
+	width: 615px;
+	height: 270px;
+
+}
+
+.product-banner h1{
+	padding: 30px;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic;
+	font-size: 50px;
+	line-height: 1;
+}
+
+.product-banner button{
+	margin-left: 30px;
+	background-color: #65cbff;
+	color: #000;
+}
+
+.feature-product_2{
+	display: flex;
+}
+
+.product-link{
+	display: flex;
+	justify-content: center;
+	padding: 30px 0px;
+}
+
+.product-link a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #3753da;
+	font-weight: bold; 
+}
+
+.product-link a:hover{
+	text-decoration: underline;
+}
+
+/* FEATURE-IMG */
+
+.feature-img{
+	display: flex;
+}
+
+.feature-col{
+	flex: 1 1 0;
+}
+
+.feature-img-item{
+	background-color: #000;
+}
+
+.feature-img-item img{
+	display: block;
+	width: 100%;
+	object-fit: cover;
+	height: 300px;
+	opacity: .6;
+}
+
+/* BRAND-LOGO */
+
+.brand-logo{
+	display: flex;
+}
+
+.brand-logo-col{
+	flex: 1 1 0;
+}
+
+.brand-logo-item{
+	height: 200px;
+	border-right: 1px solid #f2f0f0;
+	border-bottom:  1px solid #f2f0f0;
+}
+
+.brand-logo-item img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+/* FOOOTER */
+
+.footer{
+	background: url(../images/Footer-BG.jpg);
+	margin-top: 100px;
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1230px;
+	padding: 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #808080;
+	padding-bottom: 100px;
+}
+
+.footer-item{
+	margin-top: 100px;
+}
+
+.footer-item h2{
+	color: #3753da;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.footer-item a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-item a:hover{
+	text-decoration: underline;
+}
+
+.footer-item p{
+	line-height: 1.5;
+}
+
+.footer-social-link{
+	margin-top: 10px;
+	display: flex;
+}
+
+.footer-social i{
+	font-size: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+
+}
+
+.social{
+	margin-right: 10px;
+	transition: .2s;
+}
+
+.social:hover{
+	opacity: .7;
+}
+
+.social-1 i{
+	padding: 9px 7px;
+}
+
+.social-2 i{
+	padding: 9px 13px;
+}
+
+.social-3 i{
+	padding: 9px 11px;
+}
+
+.social-4 i{
+	padding: 10px 12px;
+}
+
+.social-5 i{
+	padding: 10px;
+}
+
+.social-6 i{
+	padding: 10px 12px;
+}
+
+.footer-social a{
+	color: #000;
+}
+
+.news{
+	margin-top: 40px;
+}
+
+.news input{
+	background-color: #333;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	width: 300px;
+	height: 30px;
+	padding: 0 10px;
+	color: #fff;
+}
+
+.news button{
+	margin-top: 20px;
+	padding: 10px 30px;
+}
+
+/* CCOPYRIGHT */
+
+.copyright{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1130px;
+	padding: 50px 0px;
+	margin: 0 auto;
+}
+
+.copyright-text{
+	color: #808080;
+	line-height: 1.5;
+}
+
+.copyright-icon i{
+	font-size: 24px;
+	margin-right: 10px;
+}
+
+.copyright-icon a{
+	color: #808080;
+}
