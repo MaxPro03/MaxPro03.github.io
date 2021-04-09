@@ -15,37 +15,49 @@
 			canvas { display: block; }
 		</style>
 		<script src="js/three.js"></script>
+		<script src="js/OrbitControls.js"></script>
 		<script type="module" src="js/GLTFLoader.js"></script>
 		<script type="module">
 			import {GLTFLoader} from "../js/GLTFLoader.js";
+			
+
 
 			let scene = new THREE.Scene();
-			let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-			let renderer = new THREE.WebGLRenderer();
+			let camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 2000 );
+			let renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 
+			const aLight = new THREE.AmbientLight(0x404040, 1.2);
+			scene.add(aLight);
+
+			const pLight = new THREE.PointLight(0xffffff, 1.5);
+			pLight.position.set(0, 400, 500);
+			scene.add(pLight);
+
+			const  helper = new THREE.PointLightHelper(pLight);
+			scene.add(helper);
 
 			let loader = new GLTFLoader();
 
 			let obj;
-			loader.load( 'models/apple/scene.gltf', function ( gltf ) {
+			loader.load( 'models/lambo/scene.gltf', function ( gltf ) {
 
 				obj = gltf.scene;
 				scene.add( gltf.scene );
 
 			});
-			scene.background = new THREE.Color(0x333333);
+			scene.background = new THREE.Color(0x666666);
 			let light = new THREE.HemisphereLight(0xffffff, 0x000000, 10);
 			scene.add(light);
-			camera.position.set(0, 100, 10);
+			camera.position.set(0, 200, 1000);
 			function animate(){
 				requestAnimationFrame(animate);
 				obj.rotation.y += 0.01;
 				renderer.render(scene, camera);
 			}
 			animate();
+			
 			
 
 			/*
