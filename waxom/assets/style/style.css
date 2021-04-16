@@ -2,32 +2,40 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
+a:hover{
+	color: #fff;
+}
+
 .topheader{
 	width: 100%;
-	height: 100vh;
-
-	background-size: cover;
-
-
+	height:650px;
 	background: url(../images/Waxom-Hemepage.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .navbar{
 	padding-top: 20px;
+	position: absolute;
 }
 
 .navbar-brand{
-	padding-right: 50px;
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	color: #fff;
+	display: inline-block;
+	padding-right: 30px;
 }
 
-
-.nav-item{
-	padding-left: 10px;
+.navbar-toggler-icon i{
+	color: #fff;
+	font-size: 30px;
 }
 
 .nav-link{
 	color: #fff;
-
+	font-size: 16px;
 	transition: .2s;
 }
 
@@ -35,16 +43,16 @@ body{
 	color: #c7b299;
 }
 
-/* SLIDER */
-
-.slider{
-	justify-content: center;
-	padding-top: 100px;
-	
+.nav-icons{
+	padding-left: 30px;
 }
 
-.btn-carousel{
-	margin-top: 20px;
+.nav-icons a{
+	padding: 10px;
+}
+
+.btn{
+	font-family: 'Raleway', sans-serif;
 	border-radius: 3px;
 	font-weight: 900;
 	text-transform: uppercase;
@@ -54,39 +62,135 @@ body{
 	background-color: #998675;
 	color: #fff;
 	cursor: pointer;
+	margin-top: 30px;
 }
 
-.btn-carousel:hover{
-	opacity: 0.8;
+/* SLIDER */
+
+.slider{
+	position: relative;
+	top: 30%;
+	left: 0;
 }
 
-
-.carousel-caption{
-	position: static;
-	padding: 0 300px;
-	font-family: 'Raleway', sans-serif;
+.slider-item{
+	text-align: center;
+	padding: auto;
+	padding: 0px 100px;
 }
 
-.carousel-indicators{
-	bottom: -230px;
+.slider-item h3,h1,p{
+	color: #fff;
+}
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider{
+	min-width: 0;
+	position: relative;
+	z-index: 1;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+
+
+}
+/* Лента слайдов */
+.slick-track{
+	display: flex;
+	align-items: center;
 }
 
-.carousel-indicators .active{
-	background-color: #000;
+/* Слайд */
+.slick-slide{
+
+}
+/* Слайд активный */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Стрелка */
+.slick-arrow{
+	position: absolute;
+	bottom: 40%;
+	margin: 0px 0px 0px 0px;
+	z-index: 10;
+	font-size: 0;
+	width: 45px;
+	height: 75px;
+	border: none;
+	cursor: pointer;
+	transition: .2s;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+	left: 2%;
+	background: url(../images/arrow-right.png);
+	background-repeat: no-repeat;
+	object-fit: cover;
+	transform: rotate(180deg);
+	outline: none;
+	opacity: .7;
+}
+
+.slick-arrow.slick-prev:hover{
+	opacity: 1;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	right: 2%;
+	background: url(../images/arrow-right.png);
+	background-repeat: no-repeat;
+	object-fit: cover;
+	outline: none;
+	opacity: .7;
+	
+}
+
+.slick-arrow.slick-next:hover{
+	opacity: 1;
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки */
+.slick-dots{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 44%;
+	top: 150%;
+
+}
+.slick-dots li{
+	list-style: none;
+	margin: 0px 10px;
+
+}
+.slick-dots button{
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	background-color: #c7b299;
+	border: 0;
+	border-radius: 50%;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+.slick-dots li.slick-active button{
+	background-color: transparent;
 	border: 2px solid #c7b299;
 }
 
-.carousel-indicators li {
-	background-color: #ccc;
-	
-	width: 10px;
-	height: 10px;
-	border-radius: 100%;
-}
-
-.carousel-control-prev{
-	transform: rotate(180deg);
-}
 
 /* SERVICES */
 
@@ -94,18 +198,22 @@ body{
 	margin-top: 100px;
 }
 
-.col-sm-3 img{
+.col-lg-3 img{
 	padding-bottom: 20px;
 }
 
-.col-sm-3 h4{
+.col-lg-3 h4{
 	font-weight: 600;
 	padding-bottom: 10px;
 	font-family: 'Raleway', sans-serif;
 	opacity: 0.8;
 }
 
-.col-sm-3 p:after{
+.col-lg-3 p{
+	color: #000;
+}
+
+.col-lg-3 p:after{
 	content: "";
 	display: block;
 	margin: 30px auto;
@@ -117,7 +225,7 @@ body{
 	opacity: 0.2;
 }
 
-.col-sm-3 p:after :hover{
+.col-lg-3 p:after :hover{
 	opacity: 1;
 }
 
@@ -129,9 +237,7 @@ body{
 
 .text{
 	line-height: 2;
-	padding: 100px 250px 30px 250px;
-
-
+	padding: 100px 50px;
 }
 
 .title h2{
@@ -142,6 +248,7 @@ body{
 
 .subtitle p{
 	opacity: 0.8;
+	color: #000;
 }
 
 .devices{
@@ -205,9 +312,10 @@ body{
 
 .item{
 	list-style-type: none;
-	display: inline;
+	display: inline-block;
 
 	margin-right: 5px;
+	margin-top: 20px;
 }
 
 a.item-link{
@@ -231,7 +339,7 @@ a.item-link:hover{
 /* CARD */
 
 .card{
-	width: 355px;
+	width: 100%;
 	height: 345px;
 }
 
@@ -291,6 +399,12 @@ a.item-link:hover{
 	opacity: 1;
 
 }
+
+
+.card-link i{
+	font-size: 24px;
+}
+
 
 .card-link a{
 	color: #fff;
@@ -364,19 +478,19 @@ a.item-link:hover{
 
 
 .presentation-content{
-	width: 500px;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	line-height: 2;
 
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 20%;
+	left: 25%;
 	z-index: 3;
 
 	text-align: center;
 
-	margin: 150px 0px 0px 400px;
+	
 }
 
 .presentation-button a img{
@@ -418,32 +532,46 @@ a.item-link:hover{
 	margin-top: 100px;
 }
 
+.mobile-devices-hand{
+	width: 100%;
+}
+
 .mobile-devices-text{
 	padding-top: 50px;
 }
 
-.mobile-devices-title{
+.mobile-devices-title h1{
 	font-family: 'Raleway', sans-serif;
+	color: #000;
 }
 
-.mobile-devices-subtitle{
+.mobile-devices-subtitle p{
 	padding-top: 20px;
-
+	color: #818181;
 }
 
 .mobile-devices-features{
-	padding-top: 10px;
+	padding-left: 50px;
+}
+
+.mobile-devices-features p{
+	margin-top: 10px;
+	color: #818181;
 }
 
 .fa-angle-right{
+	display: block;
 	margin: 0px 20px 0px 50px;
 	padding: 3px 6px 3px 8px;
 	border-radius: 50%;
 	background-color: #c7b299;
 	color: #fff;
+	width: 25px;
+	height: 25px;
 }
 
 .mobile-devices-features-text{
+	display: flex;
 	padding-top: 10px;
 	color: grey;
 }
@@ -455,6 +583,7 @@ a.item-link:hover{
 }
 
 .counter-count{
+	width: 100%;
 	padding-top: 20px;
 	color: #fff;
 }
@@ -554,33 +683,18 @@ a.item-link:hover{
 
 .partners{
 	position: relative;
-	background: #000;
+	background: url(../images/partners-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	margin-top: 150px;
+	padding: 150px 0px;
 }
 
 .partners-bg img{
 	width: 100%;
-	height: 470px;
-	object-fit: cover;
-	
-	opacity: .5;
 }
 
-.partners-logo{
-	position: absolute;
-	
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	top: 25%;
-	left: 155px;
-}
-
-.partners-item{
-	padding-right: 50px;
-}
 
 /* FOOTER */
 
@@ -675,4 +789,145 @@ hr{
 
 .design-by a:hover{
 	opacity: .5;
+}
+
+/* MEDIA */
+
+/* Large desktops and laptops */
+@media only screen and (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+}
+
+/* Portrait tablets and medium desktops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.nav-item{
+		padding-left: 0px;
+	}
+
+	.navbar-brand{
+		padding-right: 0px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+	li.nav-item{
+		padding-left: 0px;
+	}
+
+	.devices img{
+		width: 100%;
+	}
+
+	.navbar{
+		width: 100%;
+	}
+
+	.navbar-brand{
+		margin-right: 0;
+		padding: 0;
+	}
+
+	.nav-icons{
+		display: flex;
+		padding-left: 0;
+	}
+
+	.collapse{
+		position: absolute;
+		top: 100%;
+	}
+
+	.slick-dots{
+		left: 40%;
+		top: 130%;
+	}
+
+	.slick-arrow{
+		height: 50px;
+	}
+
+	.slick-arrow.slick-prev{
+		background-size: 50%;
+		top: 40%;
+	}
+
+	.slick-arrow.slick-next{
+		top: 42%;
+		background-size: 50%;
+	}
+
+	.col-lg-3 img{
+		margin-top: 20px;
+	}
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+	.devices img{
+		width: 100%;
+	}
+
+	.navbar-brand{
+		padding-right: 0;
+	}
+
+	.slick-arrow{
+		height: 50px;
+	}
+
+	.slick-arrow.slick-prev{
+		background-size: 50%;
+		top: 40%;
+	}
+
+	.slick-arrow.slick-next{
+		top: 42%;
+		background-size: 50%;
+	}
+
+	.slick-dots{
+		left: 37%;
+		top: 110%;
+	}
+
+	.navbar{
+		width: 100%;
+	}
+
+	.navbar-collapse.collapse.show{
+		position: absolute;
+		z-index: 2;
+		left: 0%;
+		top: 100%;
+		width: 100%;
+		background: #191919;
+		display: block;
+		justify-content: center;
+		text-align: center;
+		padding: 20px 0px;
+	}
+
+	.nav-icons{
+		padding-left: 0px;
+	}
+
+	.btn-text-boxes{
+		margin-top: 100px;
+	}
+
+	.list{
+		padding-left: 0;
+	}
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
 }
