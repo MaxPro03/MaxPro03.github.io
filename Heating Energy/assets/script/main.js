@@ -1,0 +1,1 @@
+$(".lang-link").click(function(){$(this).toggleClass('active');});
