@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/style/bootstrap.min.css">
     <!-- Style.CSS -->
@@ -33,32 +34,19 @@
                         </button>
                         <div class="nav-menu collapse navbar-collapse navbar-collapse justify-content-end py-0 ">
                            <ul class=" navbar-nav  header-navbar-nav">
-                              <li><a class=" nav-link scroll" href="#wrapper">Home</a></li>
-                              <li><a class=" nav-link scroll" href="#about">Resto</a></li>
-                              <li><a class=" nav-link scroll" href="#special">Special</a></li>
-                              <li><a class=" nav-link scroll" href="#menu">Menu</a></li>
-                              <li><a class=" nav-link scroll" href="#gallery">Gallery</a></li>
-                              <li><a class=" nav-link scroll" href="#news">News</a></li>
-                              <li class="dropdown">
-                                 <a href="javascript:;" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                 Pages<span class="dropdown-arrow ml-2">
-                                 </span>
-                                 </a>
-                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="blog-full.html">Blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-sidebar.html">Blog Sidebar</a></li>
-                                    <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
-                                    <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                                    <li><a class="dropdown-item" href="reservation.html">Reservation</a></li>
-                                    <li><a class="dropdown-item" href="menu-detailed.html">Menu Detailed</a></li>
-                                    <li><a class="dropdown-item" href="gallery.html">Look Book</a></li>
-                                 </ul>
-                              </li>
-                              <li class="ml-lg-auto"><a class=" nav-link nav-divider scroll" href="#reservation">
-                                 <img src="assets/svg/ring-bell-light.svg" alt="" class="max-width-xsm bell-light">
-                                 <img src="assets/svg/ring-bell-dark.svg" alt="" class="max-width-xsm bell-dark"></a>
-                              </li>
-                              <li><a class=" nav-link pr-0 pb-sm-4 pb-sm-0" href="index.html"><span class="fa fa-phone mr-3"></span>513 352-3209</a></li>
+                            <li><a class=" nav-link scroll" href="#rez">Резерв</a></li>
+                            <li><a class=" nav-link scroll" href="#menu">Меню</a></li>
+                              <!-- <li class="ml-lg-auto">
+                                <a class=" nav-link nav-divider scroll" href="#rez">
+                                 <img src="assets/images/ring-bell-light.svg" alt="" class="max-width-xsm bell-light">
+                                 <img src="assets/svg/ring-bell-dark.svg" alt="" class="max-width-xsm bell-dark"></a> 
+                                </a>
+                              </li> -->
+                            <li>
+                            <a class="nav-link pr-0 pb-sm-4 pb-sm-0" href="#!">
+                                +998 (90) 999-99-99
+                            </a>
+                            </li>
                            </ul>
                         </div>
                      </nav>
@@ -76,6 +64,246 @@
             </div>
         </div>
         <!--End main slider-->
+        <!-- SLIDER-TITLE -->
+        <div class="inner-hero">
+            <!--Container-->
+            <div class="container hero-content">
+               <!--row-->
+               <div class="row justify-content-center text-center">
+                  <div class="col-12 col-md-10 col-lg-10">
+                     <h1 class="display-4 mb-0 text-white">Добро Пожаловать В ...!</h1>
+                     <p class=" text-white text-uppercase font-weight-700 font-size-13 letter-spacing-medium mb-0">Караоке<span class="circle-divider">·</span>24/7
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!--End row-->
+         </div>
+    </section>
+
+    <section class="mt-5 mb-5" id="rez">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 pr-0">
+                    <div class="book-table">
+                        <div class="book-table-title mb-4">
+                            <h1 class="h2 font-alt">
+                                Резерв Столика
+                            </h1>
+                            <p>
+                                Please choose your reservation date with specific time and number of people to book a table
+                            </p>
+                        </div>
+                        <form>
+                            <div class="form-row mb-3">
+                                <div class="col-lg-6 col-12">
+                                <label class="form-label">Имя
+                                    <span class="text-danger-alt">*</span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Имя">
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                <label class="form-label">Телефон
+                                    <span class="text-danger-alt">*</span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Телефон">
+                                </div>
+                            </div><!--./form-row -->
+                            <div class="form-row mb-3">
+                                <div class="col-lg-6 col-12">
+                                    <label class="form-label">Дата
+                                        <span class="text-danger-alt">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="дд/мм">
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <label class="form-label">Время
+                                        <span class="text-danger-alt">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="00:00">
+                                </div>
+                            </div><!--./form-row -->
+                            <div class="form-row mb-3">
+                                <div class="col-12">
+                                    <label class="form-label">На сколько персон
+                                        <span class="text-danger-alt">*</span>
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Число">
+                                </div>
+                            </div><!--./form-row -->
+                            <button type="button" class="btn">Подтвердить</button>
+                            </form>
+                    </div>
+                </div><!-- col -->
+                <div class="col-6 pl-0">
+                    <iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A9ba76d1f76eac466e1d6f71ecd26b816133d39fd67b05144c2fda892a2cd7d10&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">   
+        <div class="container">
+            <div class="menu-title">
+                <div class="row justify-content-center">
+                    <div class="col">
+                       <div class="mb-5 text-center">
+                          <span class="label-title mb-3">Всё меню</span>
+                          <h1 class="h2 font-alt">Меню Караоке</h1>
+                          <p class="menu-subtitle">The time has come to bring those ideas and plans to life. This is where we really begin to visualize.</p>
+                       </div>
+                    </div>
+                </div>
+            </div><!-- ./menu-title -->
+            <div class="menu">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills menu-nav" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#first" role="tab" aria-controls="first" aria-selected="true">Десерты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#second" role="tab" aria-controls="second" aria-selected="false">Напитки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#third" role="tab" aria-controls="third" aria-selected="false">Горячее</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class="rounded-circle mr-3" src="assets/images/menu-img.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">25.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class=" rounded-circle mr-3" src="assets/images/menu-img.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">25.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class=" rounded-circle mr-3" src="assets/images/menu-img.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">25.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                            </div><!-- tab-pane -->
+                            <div class="tab-pane fade show" id="second" role="tabpanel" aria-labelledby="second-tab">
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class="rounded-circle mr-3" src="assets/images/menu-drinks.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">100.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class=" rounded-circle mr-3" src="assets/images/menu-drinks.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">80.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class=" rounded-circle mr-3" src="assets/images/menu-drinks.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">70.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                            </div><!-- tab-pane -->
+                            <div class="tab-pane fade show" id="third" role="tabpanel" aria-labelledby="third-tab">
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class="rounded-circle mr-3" src="assets/images/menu-lunch.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">50.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class=" rounded-circle mr-3" src="assets/images/menu-lunch.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">50.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                                <div class="menu-item mb-4">
+                                    <div class="menu-img">
+                                        <img class=" rounded-circle mr-3" src="assets/images/menu-lunch.jpg" alt="">
+                                    </div>
+                                    <div class="menu-body">
+                                       <div class="menu-body-name">
+                                           <span>Waffle Brunch</span>
+                                           <div class="dots-price"></div>
+                                           <span class="menu-price mb-0">25.500сум</span>
+                                       </div>
+                                       <p class="menu-ingrid">French Toast / Bacon / Strawberries</p>
+                                    </div>
+                                </div><!-- ./menu-item -->
+                            </div><!-- tab-pane -->
+                        </div><!-- ./tab-content -->      
+                    </div><!-- ./col-12 -->
+                </div>
+            </div>
+        </div><!-- ./container -->
+    </section>
+
+    <section>
+        <div class="container">
+
+        </div>
     </section>
 
 
@@ -111,6 +339,7 @@
     <script src="assets/scripts/jquery-3.6.0.min.js"></script>
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
     <script src="assets/scripts/slick.min.js"></script>
+    <script src="assets/scripts/fancybox.umd.js"></script>
     <script src="assets/scripts/script.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
